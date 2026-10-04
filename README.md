@@ -1,9 +1,9 @@
-# TIS Homepage Redesign
+# Tulas International School (TIS) - Homepage Redesign
 
 An animated, high-converting, fully responsive redesign of the [Tulas International School](https://tis.edu.in/) homepage. The original brand colours (navy + yellow) and copy are retained.
 
-**Live demo:** https://YOUR-PROJECT.vercel.app
-**Repository:** https://github.com/YOUR-USERNAME/tis-homepage 
+- **Live demo:** https://tis-homepage-pi.vercel.app
+- **Repository:** https://github.com/UDAYKIRANGB/tis-homepage-redesign
 
 ## Tech stack
 | Requirement | Used |
@@ -28,12 +28,20 @@ The brief asks for at least two; all four are implemented.
 - Conversion layer: sticky call + enquire bar, hero trust strip, 3-step admissions, FAQ accordion, closing CTA banner
 - Animated mobile menu, semantic HTML, and `prefers-reduced-motion` support
 
+## 📦 Getting Started Locally
+
+**Clone the repository:**
+
+```bash
+   git clone [https://github.com/UDAYKIRANGB/tis-homepage-redesign](https://github.com/UDAYKIRANGB/tis-homepage-redesign)
+   cd tis-homepage-redesign
+
 ## Run locally
 Requires Node.js 18 or newer.
 
 ```bash
 npm install
-npm run dev        # http://localhost:5173
+npm run dev        # http://localhost:3000
 ```
 
 Production build:
@@ -42,17 +50,6 @@ Production build:
 npm run build      # outputs to dist/
 npm run preview    # serves the build locally
 ```
-
-## Deploy
-**Vercel (recommended)**
-1. Push the repo to GitHub.
-2. On vercel.com choose *Add New → Project* and import the repo.
-3. Vercel detects Vite automatically: build command `npm run build`, output directory `dist`.
-4. Click *Deploy*, then paste the live URL at the top of this README.
-
-**Netlify:** same settings (build `npm run build`, publish `dist`).
-
-**GitHub Pages:** set `base: '/<repo-name>/'` in `vite.config.js`, run `npm run build` and publish `dist/`.
 
 ## Project structure
 ```
@@ -72,8 +69,4 @@ src/
 - All copy lives in `data/content.js`, so components stay presentational.
 - Animations use transform and opacity only, to keep frame rates smooth.
 - Reveals play once. Touch devices skip the cursor and tilt effects.
-- The theme is stored in `localStorage` and set by an inline script in `index.html`, so there is no flash on load.
 
-## Notes
-- The enquiry form is front-end only. Connect it to an admissions API or CRM for production.
-- Program names and FAQ answers are built from facts on tis.edu.in; edit them in `content.js`.
