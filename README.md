@@ -33,8 +33,8 @@ The brief asks for at least two; all four are implemented.
 **Clone the repository:**
 
 ```bash
-   git clone [https://github.com/UDAYKIRANGB/tis-homepage-redesign](https://github.com/UDAYKIRANGB/tis-homepage-redesign)
-   cd tis-homepage-redesign
+git clone [https://github.com/UDAYKIRANGB/tis-homepage-redesign](https://github.com/UDAYKIRANGB/tis-homepage-redesign)
+cd tis-homepage-redesign
 
 ## Run locally
 Requires Node.js 18 or newer.
